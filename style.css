@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffafcc, #ffc8dd, #bde0fe);
+    text-align: center;
+}
+
+.game-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 700px;
+    background: #ffe5ec;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.player {
+    width: 40%;
+    padding: 20px;
+    background: #f9c5d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dice img {
+    width: 150px;
+    margin: 20px;
+    animation: diceRoll 0.5s ease-in-out;
+}
+
+@keyframes diceRoll {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1493;
+}
+
+#winner {
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+}
