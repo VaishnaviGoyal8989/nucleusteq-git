@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="start-screen">
+    <h1>🎯 Welcome to Quiz Game</h1>
+    <div class="section">
+        <label>Select Category:</label>
+        <select id="category">
+            <option>General Knowledge</option>
+            <option>Science</option>
+            <option>History</option>
+            <option>Technology</option>
+            <option>Sports</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <label>Select Difficulty:</label>
+        <select id="level">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <button onclick="startGame()" class="start-btn">🚀 Start Game</button>
+    </div>
+</div>
+
+<div class="quiz-container" style="display:none;">
+    <div class="timer">⏳ Timer: <span id="timer">15</span>s</div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <button onclick="exitGame()" class="exit-btn">❌ Exit Game</button>
+</div>
+
+<div class="result-screen" style="display:none;">
+    <h2>Your Score: <span id="score"></span></h2>
+    <button onclick="restartGame()" class="restart-btn">🔄 Play Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
